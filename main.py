@@ -23,7 +23,7 @@ def on_about_post():
   return response
 
 @app.route("/logout")
-def logout()
+def logout():
   response = make_response("logout")
   response.set_cookie("uporabnisko_ime", "", expires=0)
   return response
